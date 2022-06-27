@@ -13,7 +13,7 @@ font-family: 'Jomolhari', serif;
 .padre{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 20% 75% 5%;
+    grid-template-rows: 20% 77% 5%;
     grid-template-areas: "header header header"
                          "hero   hero   hero"
                          "footer footer footer";
@@ -26,7 +26,6 @@ font-family: 'Jomolhari', serif;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
-    grid-template-columns: auto 400px;
 }
 
 .hijo2{
@@ -43,14 +42,13 @@ font-family: 'Jomolhari', serif;
 
 .navBar{
     display: flex;
-    font-size: calc(0.5em + 1vw);
     text-transform: uppercase;
     color: rgb(255, 255, 255);
     text-shadow: red 0 -2px;
 }
 nav ul li a{
-    display: grid;
     margin: 30px;
+    font-size: 100px;
     color: aliceblue;
     justify-content: center;
 }
@@ -130,8 +128,6 @@ footer{
     background-color: rgba(0, 0, 0, 0.88);
     color: aliceblue;
     width: 100%;
-    position: absolute;
-    bottom:0
 }
 footer p{
     font-size: 1rem;
@@ -451,7 +447,7 @@ ul.slider li:target {
     }
     nav ul li a{
         margin:0px 28px;
-        font-size: 16px
+        font-size: 1rem;
     }
     .hero{
         margin-top: 150px;
@@ -562,7 +558,7 @@ ul.slider li:target {
     }
     nav ul li a{
         margin:0px 30px;
-        font-size: 8px
+        font-size: 1rem;
     }
     .hero{
         flex-direction: column;
@@ -613,7 +609,7 @@ ul.slider li:target {
         margin: 100px;
     }
     main{
-        height: 79vh;
+        height: 76vh;
     }
     .container{
         max-width: 550px;
@@ -671,8 +667,8 @@ ul.slider li:target {
         margin: 30px
     }
     nav ul li a{
-        margin:5px;
-        font-size: 8px
+        margin:2px;
+        font-size: 0.6rem;
     }
     .hero{
         flex-direction: column;
@@ -782,5 +778,12 @@ ul.slider li:target {
 @media screen and (max-width:575px) and (min-width:500px){
     .navbar{
         display: block;
+    }
+    nav ul li a{
+        margin: 5px;
+        font-size: 0.8rem;
+    }
+    .hijo2{
+        max-height: 75vh;
     }
 }
